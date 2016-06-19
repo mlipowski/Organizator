@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="259.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.EventEditDialogController">
+   <children>
+      <ButtonBar layoutX="189.0" layoutY="205.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#handleOk" text="OK" />
+            <Button mnemonicParsing="false" onAction="#handleCancel" text="Anuluj" />
+        </buttons>
+      </ButtonBar>
+      <Label layoutX="43.0" layoutY="14.0" text="Miejsce" />
+      <Label layoutX="43.0" layoutY="53.0" text="Data" />
+      <Label layoutX="43.0" layoutY="92.0" text="Godzina" />
+      <Label layoutX="43.0" layoutY="130.0" text="Opis" />
+      <TextField fx:id="placeField" layoutX="102.0" layoutY="10.0" prefHeight="25.0" prefWidth="162.0" />
+      <DatePicker fx:id="dateField" layoutX="102.0" layoutY="49.0" prefHeight="25.0" prefWidth="162.0" />
+      <TextField fx:id="descriptionField" layoutX="102.0" layoutY="126.0" prefHeight="25.0" prefWidth="241.0" />
+      <TextField fx:id="timeField" layoutX="102.0" layoutY="88.0" />
+   </children>
+</AnchorPane>
